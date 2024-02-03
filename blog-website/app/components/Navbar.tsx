@@ -4,7 +4,9 @@ export default function Navbar() {
   return (
     <nav>
       <div>
-        <Link href="/">Zahari Cheyrekov</Link>
+        <h1>
+          <Link href="/">Zahari Cheyrekov</Link>
+        </h1>
       </div>
     </nav>
   );

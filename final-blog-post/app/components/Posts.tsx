@@ -1,8 +1,12 @@
-import { getSortedPostsData } from "@/lib/posts";
+import { getPostsMeta } from "@/lib/posts";
 import ListItem from "./ListItem";
 
-export default function Posts() {
-  const posts = getSortedPostsData();
+export default async function Posts() {
+  const posts = getPostsMeta();
+
+  if (!posts) {
+    return <h1>Sorry, no posts are available</h1>;
+  }
 
   return (
     <section>

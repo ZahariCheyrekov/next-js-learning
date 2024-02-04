@@ -1,8 +1,8 @@
+import { Metadata } from "next";
 import Navbar from "./components/Navbar";
-import MyProfilePic from "./components/MyProfilePic";
 import "./globals.css";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Blog Website",
   description: "This is my blog website",
 };
@@ -16,8 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
-        <MyProfilePic />
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );
